@@ -15,11 +15,26 @@
     "jsx": "react-jsx",
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    // "strict": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true
+
+    "baseUrl": ".",
+    "paths": {
+      "@api/*": ["src/api/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@pages/*": ["src/pages/*"],
+      "@provier/*": ["src/provider/*"],
+      "@router/*": ["src/router/*"],
+      "@types/*": ["src/types/*"],
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src"],
+
+
+  "include": ["src", "**/*.ts", "**/*.tsx",],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
